@@ -15,12 +15,12 @@ const fs        = require("fs");
 const log       = require("npmlog");
 
 // Tokens
-const APIAI_TOKEN = process.env.APIAI_TOKEN || 'f345f0d9b6e24007a9fcb6f64a92cd2f'; // DialogFlow APi Key
+const APIAI_TOKEN = process.env.APIAI_TOKEN || ''; // DialogFlow APi Key
 const apiaiApp = apiai(APIAI_TOKEN);
 
 // User Credentials
-const email = '3partha'; // Your Username
-const pass  = '798193274622'; // Your Password
+const email = ''; // Your Username
+const pass  = ''; // Your Password
 
 var rl = readline.createInterface({
     input: process.stdin,
