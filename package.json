@@ -1,0 +1,16 @@
+{
+  "name": "reply-my-bitch",
+  "version": "0.0.1",
+  "description": "Automated Facebook Messenger for my Bitch",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Rakibul Yeasin",
+  "license": "MIT",
+  "devDependencies": {
+    "apiai": "^4.0.3",
+    "facebook-chat-api": "github:schmavery/facebook-chat-api",
+    "npmlog": "^4.1.2"
+  }
+}
