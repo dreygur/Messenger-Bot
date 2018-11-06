@@ -19,8 +19,8 @@ const APIAI_TOKEN = process.env.APIAI_TOKEN || 'f345f0d9b6e24007a9fcb6f64a92cd2f
 const apiaiApp = apiai(APIAI_TOKEN);
 
 // User Credentials
-const email = 'rytotul'; // Your Username
-const pass  = 'RYT.Yeasin@@@0101'; // Your Password
+const email = '3partha'; // Your Username
+const pass  = '798193274622'; // Your Password
 
 var rl = readline.createInterface({
     input: process.stdin,
