@@ -14,8 +14,9 @@ const fs        = require("fs");
 const log       = require("npmlog");
 
 // User Credentials
-const email = 'rytotul'; // Your Username
-const pass  = 'RYT.Yeasin@@@0101'; // Your Password
+const email = ''; // Your Username
+const pass  = ''; // Your Password
+const she   = ''; // Your GF
 
 var rl = readline.createInterface({
     input: process.stdin,
@@ -40,7 +41,7 @@ try{
         if(err) return console.error(err);
         setInterval(() => {
             var randomNumber = Math.floor(Math.random()*love.length);
-            api.sendMessage(love[randomNumber], "100027948102857");
+            api.sendMessage(love[randomNumber], she);
             console.log(love[randomNumber]);
         }, 1000);
     });
@@ -64,7 +65,7 @@ catch(error) {
         fs.writeFileSync('appstate.json', JSON.stringify(api.getAppState()));
         setInterval(() => {
             var randomNumber = Math.floor(Math.random()*love.length);
-            api.sendMessage(love[randomNumber], "100027948102857");
+            api.sendMessage(love[randomNumber], she);
             console.log(love[randomNumber]);
         }, 1000);
     });
