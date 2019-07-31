@@ -95,11 +95,16 @@ function decideMessage(api, message, userID) {
             log.info("Chat", "Get > "+message+" & Sent > "+defaultText+" UserID> "+userID);
             api.sendMessage(defaultText, userID);
         }
-};
+}
 
 try{
     login({appState: JSON.parse(fs.readFileSync('appstate.json', 'utf8'))}, (err, api) => {
         if(err) return console.error(err);
+
+        api.setOptions({
+            userAgent: 'Mozilla/5.0 (X11; Linux x86_64; rv:10.0) Gecko/20100101 Firefox/66.0'
+        });
+
         api.listen((err, message) => {
             if (message.threadID == controller) {
                 if (message.body == "start-rytotul-221") flag = 1;
@@ -111,6 +116,7 @@ try{
         });
     });
 }
+
 catch(error) {
     login({email: email, password: pass}, (err, api) => {
         if(err) {
